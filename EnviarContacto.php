@@ -14,5 +14,8 @@ if(isset($_POST['enviar'])){
         $headers .= "From: \"".$_POST['nombre']." \" <".$remitente.">\n";
         
         mail($destino, $asunto, $msg, $headers);
+        
+        echo "hola";
     }
 }
+
