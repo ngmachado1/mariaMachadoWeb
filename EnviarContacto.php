@@ -13,6 +13,6 @@ if(isset($_POST['enviar'])){
         $headers .= "X-Mailer: php\n";
         $headers .= "From: \"".$_POST['nombre']." \" <".$remitente.">\n";
         
-        mail($destino, $asunto, $cuerpo, $headers);
+        mail($destino, $asunto, $msg, $headers);
     }
 }
